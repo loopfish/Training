@@ -1,0 +1,9 @@
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.deps.json
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.pdb
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\obj\Debug\netstandard2.0\StringLibrary.csprojAssemblyReference.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\obj\Debug\netstandard2.0\StringLibrary.csproj.CoreCompileInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\obj\Debug\netstandard2.0\StringLibrary.AssemblyInfoInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\obj\Debug\netstandard2.0\StringLibrary.AssemblyInfo.cs
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\obj\Debug\netstandard2.0\StringLibrary.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\StringLibrary\obj\Debug\netstandard2.0\StringLibrary.pdb

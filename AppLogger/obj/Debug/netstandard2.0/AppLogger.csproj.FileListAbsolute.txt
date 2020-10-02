@@ -1,0 +1,9 @@
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\bin\Debug\netstandard2.0\AppLogger.deps.json
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\bin\Debug\netstandard2.0\AppLogger.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\bin\Debug\netstandard2.0\AppLogger.pdb
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\obj\Debug\netstandard2.0\AppLogger.csprojAssemblyReference.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\obj\Debug\netstandard2.0\AppLogger.csproj.CoreCompileInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\obj\Debug\netstandard2.0\AppLogger.AssemblyInfoInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\obj\Debug\netstandard2.0\AppLogger.AssemblyInfo.cs
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\obj\Debug\netstandard2.0\AppLogger.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\AppLogger\obj\Debug\netstandard2.0\AppLogger.pdb

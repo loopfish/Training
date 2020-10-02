@@ -1,0 +1,16 @@
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\bin\Debug\netcoreapp3.1\ShowCase.exe
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\bin\Debug\netcoreapp3.1\ShowCase.deps.json
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\bin\Debug\netcoreapp3.1\ShowCase.runtimeconfig.json
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\bin\Debug\netcoreapp3.1\ShowCase.runtimeconfig.dev.json
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\bin\Debug\netcoreapp3.1\ShowCase.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\bin\Debug\netcoreapp3.1\ShowCase.pdb
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\bin\Debug\netcoreapp3.1\StringLibrary.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\bin\Debug\netcoreapp3.1\StringLibrary.pdb
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\obj\Debug\netcoreapp3.1\ShowCase.csprojAssemblyReference.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\obj\Debug\netcoreapp3.1\ShowCase.csproj.CoreCompileInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\obj\Debug\netcoreapp3.1\ShowCase.AssemblyInfoInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\obj\Debug\netcoreapp3.1\ShowCase.AssemblyInfo.cs
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\obj\Debug\netcoreapp3.1\ShowCase.csproj.CopyComplete
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\obj\Debug\netcoreapp3.1\ShowCase.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\obj\Debug\netcoreapp3.1\ShowCase.pdb
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ClassLibraryProjects\ShowCase\obj\Debug\netcoreapp3.1\ShowCase.genruntimeconfig.cache

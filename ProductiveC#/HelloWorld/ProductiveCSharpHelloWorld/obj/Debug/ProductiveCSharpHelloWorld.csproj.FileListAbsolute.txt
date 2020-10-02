@@ -1,0 +1,6 @@
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ProductiveC#\HelloWorld\ProductiveCSharpHelloWorld\bin\Debug\ProductiveCSharpHelloWorld.exe
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ProductiveC#\HelloWorld\ProductiveCSharpHelloWorld\bin\Debug\ProductiveCSharpHelloWorld.pdb
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ProductiveC#\HelloWorld\ProductiveCSharpHelloWorld\obj\Debug\ProductiveCSharpHelloWorld.csprojAssemblyReference.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ProductiveC#\HelloWorld\ProductiveCSharpHelloWorld\obj\Debug\ProductiveCSharpHelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ProductiveC#\HelloWorld\ProductiveCSharpHelloWorld\obj\Debug\ProductiveCSharpHelloWorld.exe
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\ProductiveC#\HelloWorld\ProductiveCSharpHelloWorld\obj\Debug\ProductiveCSharpHelloWorld.pdb

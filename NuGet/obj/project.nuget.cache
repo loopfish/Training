@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cFAFrPjUsqbmF/G0OYaHUol2PY/S4M0SwZM73Hj0TY9+Ja01n9bPR6dAWyWd4Dgu8BaBYsHTDKx2DcGp8ga+Vg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\014357\\OneDrive - The Solicitors Regulation Authority\\Projects\\Training\\NuGet\\NuGet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\014357\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

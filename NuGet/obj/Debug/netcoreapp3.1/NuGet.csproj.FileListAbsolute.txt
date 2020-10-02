@@ -1,0 +1,15 @@
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\bin\Debug\netcoreapp3.1\NuGet.exe
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\bin\Debug\netcoreapp3.1\NuGet.deps.json
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\bin\Debug\netcoreapp3.1\NuGet.runtimeconfig.json
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\bin\Debug\netcoreapp3.1\NuGet.runtimeconfig.dev.json
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\bin\Debug\netcoreapp3.1\NuGet.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\bin\Debug\netcoreapp3.1\NuGet.pdb
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\obj\Debug\netcoreapp3.1\NuGet.csprojAssemblyReference.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\obj\Debug\netcoreapp3.1\NuGet.csproj.CoreCompileInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\obj\Debug\netcoreapp3.1\NuGet.AssemblyInfoInputs.cache
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\obj\Debug\netcoreapp3.1\NuGet.AssemblyInfo.cs
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\obj\Debug\netcoreapp3.1\NuGet.csproj.CopyComplete
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\obj\Debug\netcoreapp3.1\NuGet.dll
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\obj\Debug\netcoreapp3.1\NuGet.pdb
+C:\Users\014357\OneDrive - The Solicitors Regulation Authority\Projects\Training\NuGet\obj\Debug\netcoreapp3.1\NuGet.genruntimeconfig.cache
