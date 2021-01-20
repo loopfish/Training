@@ -2,7 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-       "storageNamePrefix": {
+       "storagePrefix": {
            "type": "string",
            "minLength": 3,
            "maxLength": 11
@@ -31,7 +31,7 @@
    },
     "functions": [],
     "variables": {
-        "storageName": "[concat(toLower(parameters('storageNamePrefix')), uniqueString(resourceGroup().id))]"
+        "storageName": "[concat(toLower(parameters('storagePrefix')), uniqueString(resourceGroup().id))]"
     },
     "resources": [
         {
