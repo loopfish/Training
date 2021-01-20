@@ -7,6 +7,13 @@
            "minLength": 3,
            "maxLength": 11
        },
+       "resourceTags": {
+            "type": "object",
+            "defaultValue": {
+                "Environment": "Dev",
+                "Project": "Inventory"
+            }
+        },
         "storageSKU": {
             "type": "string",
             "defaultValue": "Standard_LRS",
@@ -26,18 +33,18 @@
     "variables": {
         "storageName": "[concat(toLower(parameters('storageNamePrefix')), uniqueString(resourceGroup().id))]"
     },
-    "resources": [{
-        "name": "[variables('storageName')]",
-        "type": "Microsoft.Storage/storageAccounts",
-        "apiVersion": "2019-06-01",
-        "tags": {
-            "displayName": "[variables('storageName')]"
-        },
-        "location": "[resourceGroup().location]",
-        "kind": "StorageV2",
-        "sku": {
-         "name": "[parameters('storageSKU')]"
-       }
-    }],
+    "resources": [
+        {
+            "name": "[variables('storageName')]",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-06-01",
+            "tags": "[parameters('resourceTags')]",
+            "location": "[resourceGroup().location]",
+            "kind": "StorageV2",
+            "sku": {
+            "name": "[parameters('storageSKU')]"
+          }
+        }
+    ],
      "outputs": {}
 }
