@@ -2,8 +2,17 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.1",
     "apiProfile": "",
-    "parameters": {},
+    "parameters": {
+        "filesToCopy": {
+            "type": "array",
+            "metadata": {
+                "description": "List of files to copy to application storage account."
+            },
+            "defaultValue": [ "appsettings.json" ]
+        }
+    },
     "variables": {
+        "singleQuote": "'",
         "storageAccountName": "[concat('storage', uniqueString(resourceGroup().id))]",
         "storageBlobContainerName": "config",
         "userAssignedIdentityName": "configDeployer",
@@ -12,24 +21,6 @@
     },
     "functions": [],
     "resources": [
-        {
-            "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
-            "apiVersion": "2018-11-30",
-            "name": "[variables('userAssignedIdentityName')]",
-            "location": "[resourceGroup().location]"
-        },
-        {
-            "type": "Microsoft.Authorization/roleAssignments",
-            "apiVersion": "2018-09-01-preview",
-            "name": "[variables('roleAssignmentName')]",
-            "dependsOn": [ "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('userAssignedIdentityName'))]" ],
-            "properties": {
-                "roleDefinitionId": "[resourceId('Microsoft.Authorization/roleDefinitions', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
-                "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('userAssignedIdentityName')), '2015-08-31-preview').principalId]",
-                "scope": "[resourceGroup().id]",
-                "principalType": "ServicePrincipal"
-            }
-        },
         {
             "name": "[variables('storageAccountName')]",
             "type": "Microsoft.Storage/storageAccounts",
@@ -76,6 +67,24 @@
             }
         },
         {
+            "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "apiVersion": "2018-11-30",
+            "name": "[variables('userAssignedIdentityName')]",
+            "location": "[resourceGroup().location]"
+        },
+        {
+            "type": "Microsoft.Authorization/roleAssignments",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[variables('roleAssignmentName')]",
+            "dependsOn": [ "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('userAssignedIdentityName'))]" ],
+            "properties": {
+                "roleDefinitionId": "[resourceId('Microsoft.Authorization/roleDefinitions', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
+                "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('userAssignedIdentityName')), '2015-08-31-preview').principalId]",
+                "scope": "[resourceGroup().id]",
+                "principalType": "ServicePrincipal"
+            }
+        },
+        {
             "type": "Microsoft.Resources/deploymentScripts",
             "apiVersion": "2019-10-01-preview",
             "name": "[variables('deploymentScriptName')]",
@@ -94,21 +103,48 @@
             "properties": {
                 "azPowerShellVersion": "3.0",
                 "scriptContent": "
-                    Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/mslearn-arm-deploymentscripts-sample/appsettings.json' -outfile 'appsettings.json'
-                    $StorageAccount = Get-AzStorageAccount -ResourceGroupName 'learndeploymentscript_exercise_1' | Where-Object {$_.StorageAccountName -like 'storage*'}
-                    $Blob = Set-AzStorageBlobContent -File 'appsettings.json' -Container 'config' -blob 'appsettings.json' -context $StorageAccount.Context
+                    param([string]$File)
+                    $FileList = $File  -replace '(\\[|\\])' -split ' ' | Foreach-Object {$_.trim()}
+                    $StorageAccount = Get-AzStorageAccount -ResourceGroupName $env:ResourceGroupName -Name $env:StorageAccountName -Verbose
+                    $Count = 0
                     $DeploymentScriptOutputs = @{}
-                    $DeploymentScriptOutputs['Uri'] = $Blob.ICloudBlob.Uri
-                    $DeploymentScriptOutputs['StorageUri'] = $Blob.ICloudBlob.StorageUri
+                    foreach ($FileName in $FileList) {
+                        Write-Host \"Copying $FileName to $env:StorageContainerName in $env:StorageAccountName.\"
+                        Invoke-RestMethod -Uri \"https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/mslearn-arm-deploymentscripts-sample/$FileName\" -outfile $FileName
+                        $Blob = Set-AzStorageBlobContent -File $FileName -Container $env:StorageContainerName -blob $FileName -context $StorageAccount.Context
+                        $DeploymentScriptOutputs[$FileName] = @{}
+                        $DeploymentScriptOutputs[$FileName]['Uri'] = $Blob.ICloudBlob.Uri
+                        $DeploymentScriptOutputs[$FileName]['StorageUri'] = $Blob.ICloudBlob.StorageUri
+                        $Count++
+                    }
                 ",
-                "retentionInterval": "P1D"
+                "retentionInterval": "P1D",
+                "arguments": "[concat( '-File ', variables('singleQuote'), string(parameters('filesToCopy')), variables('singleQuote'))]",
+                "environmentVariables": [
+                    {
+                        "name": "ResourceGroupName",
+                        "value": "[resourceGroup().name]"
+                    },
+                    {
+                        "name": "StorageAccountName",
+                        "value": "[variables('storageAccountName')]"
+                    },
+                    {
+                        "name": "StorageContainerName",
+                        "value": "[variables('storageBlobContainerName')]"
+                    }
+                ],
             }
         }
     ],
     "outputs": {
-    "fileUri": {
-        "type": "string",
-        "value": "[reference(variables('deploymentScriptName')).outputs.Uri]"
+        "fileUri": {
+            "type": "string",
+            "value": "[reference(variables('deploymentScriptName')).outputs]"
+        },
+        "storageAccountName": {
+            "type": "string",
+            "value": "[variables('storageAccountName')]"
+        }
     }
-}
 }
