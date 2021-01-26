@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "adminUsername": {
+        "value": "azureuser"
+      },
+      "vmName": {
+        "value": "vm2"
+      },
+      "adminPasswordOrKey": {
+        "reference": {
+           "keyVault": {
+           "id": "/subscriptions/b021efec-5d86-424e-995a-fee3c64180f2/resourceGroups/arm-rg/providers/Microsoft.KeyVault/vaults/tailwind-secrets9850519"
+           },
+           "secretName": "vmPassword"
+        }
+      }
+    }
+  }
